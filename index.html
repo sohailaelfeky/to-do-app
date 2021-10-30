@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@400;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="style.css" />
+    <title>TODO</title>
+  </head>
+  <body class="body-dark">
+    <main>
+      <img class="background-dark" src="images/bg-desktop-dark.jpg" alt="" />
+      <img
+        class="background-light"
+        hidden
+        src="images/bg-desktop-light.jpg"
+        alt=""
+      />
+
+      <div class="center-div">
+        <div class="title-div">
+          <h1>TODO</h1>
+          <img
+            src="images/icon-moon.svg"
+            class="img set-darkmode"
+            hidden
+            alt=""
+          />
+          <img src="images/icon-sun.svg" class="img set-lightmode" alt="" />
+        </div>
+
+        <form action="">
+          <input
+            type="text"
+            class="task-submit ts-dark"
+            placeholder="Create a new todo..."
+          />
+        </form>
+
+        <section class="task-lists"></section>
+
+        <div class="bottom-div ts-dark">
+          <p class="p"><span class="items-left">0</span> items left</p>
+
+          <div class="filter-btns">
+            <button class="all-btn dark-mode-hover">All</button>
+            <button class="active-btn dark-mode-hover">Active</button>
+            <button class="complete-btn dark-mode-hover">Completed</button>
+          </div>
+          <button class="clear-complete">Clear Completed</button>
+        </div>
+
+        <p class="p">Drop and drag to reorder list</p>
+        <!-- <img src="images/icon-check.svg" alt="" /> -->
+        <!-- done checklist  -->
+        <!-- <img src="images/icon-cross.svg" alt="" /> -->
+        <!-- delete button for each task -->
+      </div>
+    </main>
+  </body>
+  <script src="Script.js"></script>
+</html>
